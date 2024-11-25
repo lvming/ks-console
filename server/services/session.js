@@ -454,6 +454,16 @@ const getOAuthInfo = async () => {
           url = item.provider.host;
         }
 
+        if (item.type === 'WeixinIdentityProvider') {
+          params.appid = params.client_id;
+          delete params.client_id;
+          const bridgeURL = item.provider.bridgeURL;
+          if (bridgeURL) {
+            params.state += `|${params.redirect_uri}`;
+            params.redirect_uri = bridgeURL;
+          }
+        }
+
         if (url && !isEmpty(params)) {
           url = `${url}?${Object.keys(params)
             .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(params[key])}`)
