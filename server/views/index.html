@@ -15,6 +15,9 @@
     <% } %> <% if (manifest && manifest.css && manifest.css.length > 0) { %> <%
     manifest.css.forEach(function(item){ %>
     <link href="<%= bundlePrefix %>/<%= item %>" rel="stylesheet" media="all" />
+    <% }) %> <% } %> <% if (!isDev && extStyles && extStyles.length > 0) { %> <%
+    extStyles.forEach(function(extstyle){ %>
+    <link href="/pstatic<%= extstyle %>" rel="stylesheet" media="all" />
     <% }) %> <% } %>
   </head>
   <body>
@@ -23,7 +26,7 @@
       { "imports": <%- importMap %> }
     </script>
     <script type="text/javascript">
-      window.globals = JSON.parse(`<%- globals %>`);
+      window.globals = JSON.parse(decodeURIComponent(`<%- globals %>`));
     </script>
     <% if (isDev) { %> <%- include('./components/dev_scripts.html') %> <% } else { %> <%-
     include('./components/prod_scripts.html') %> <% } %>

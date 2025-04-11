@@ -36,7 +36,7 @@ const handleLoginResp = (resp = {}) => {
   const { username, extra, groups } = jwtDecode(token);
   const email = get(extra, 'email[0]');
   const initialized = get(extra, 'uninitialized[0]') !== 'true';
-  const extraname = get(extra, 'username[0]') || get(extra, 'uid[0]');
+  const extraname = get(extra, 'username[0]');
 
   return {
     username,
@@ -252,7 +252,7 @@ const getWorkspaces = async (token, clusterRole) => {
 
   const backendVersion = await sendGatewayRequest({
     method: 'GET',
-    url: `/kapis/version`,
+    url: `/version`,
     token,
   });
   if (backendVersion) {

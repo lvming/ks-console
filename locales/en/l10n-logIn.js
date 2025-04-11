@@ -5,7 +5,8 @@
 
 module.exports = {
   // Log in page
-  INPUT_USERNAME_OR_EMAIL_TIP: 'Please enter your username or email.',
+  INPUT_USERNAME_OR_EMAIL_TIP: 'Please enter your username or email',
+  INPUT_EMAIL_TIP: 'Please enter your email',
   LOG_IN: 'Log In',
   LOG_IN_WITH_TITLE: 'Log in with {title}',
   LOG_OUT: 'Log Out',
@@ -32,4 +33,6 @@ module.exports = {
   SET_EMAIL_AND_USERNAME: 'Set Email and Username',
   PASSWORD_CHARACTERS:
     'Contain at least 1 special character (~!@#$%^&*()-_=+\\|[{}];:\'",<.>/? or space).',
+  PLEASE_CONFIRM_YOUR_ACCOUNT_INFO: 'Please confirm your account info',
+  PLEASE_INPUT_USERNAME: 'Please input username',
 };

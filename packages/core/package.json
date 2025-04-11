@@ -13,6 +13,7 @@
   ],
   "dependencies": {
     "@jridgewell/resolve-uri": "^3.1.0",
+    "@tanstack/react-table": "^8.17.3",
     "clean-deep": "^3.4.0",
     "embla-carousel-react": "^8.0.0-rc11",
     "file-saver": "^2.0.5",
@@ -25,7 +26,8 @@
     "remark-gfm": "^3.0.1",
     "systemjs": "^6.14.3",
     "type-fest": "^4.13.1",
-    "wujie-react": "^1.0.6"
+    "wujie-react": "^1.0.22",
+    "zustand": "^4.5.5"
   },
   "devDependencies": {
     "@types/netmask": "^2.0.5",
@@ -35,12 +37,12 @@
     "@ks-console/appstore": "^4.1.1",
     "@ks-console/console": "^4.1.1",
     "@ks-console/shared": "^4.1.1",
-    "@kubed/charts": "^0.2.21",
-    "@kubed/code-editor": "^0.2.21",
-    "@kubed/components": "^0.2.21",
-    "@kubed/hooks": "^0.2.21",
-    "@kubed/icons": "^0.2.21",
-    "@kubed/log-viewer": "^0.2.21"
+    "@kubed/charts": "^0.2.31",
+    "@kubed/code-editor": "^0.2.31",
+    "@kubed/components": "^0.2.31",
+    "@kubed/hooks": "^0.2.31",
+    "@kubed/icons": "^0.2.31",
+    "@kubed/log-viewer": "^0.2.31"
   },
   "gitHead": "f5ad04cf99d7ae5229f4ff770a24af2182d38ab8"
 }

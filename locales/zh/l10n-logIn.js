@@ -5,7 +5,8 @@
 
 module.exports = {
   // Log in page
-  INPUT_USERNAME_OR_EMAIL_TIP: '请输入用户名或邮箱。',
+  INPUT_USERNAME_OR_EMAIL_TIP: '请输入用户名或邮箱',
+  INPUT_EMAIL_TIP: '请输入邮箱',
   LOG_IN: '登录',
   LOG_IN_WITH_TITLE: '通过 {title} 登录',
   LOG_OUT: '登出',
@@ -29,4 +30,6 @@ module.exports = {
   // Third-party authentication
   SET_EMAIL_AND_USERNAME: '设置邮箱和用户名',
   PASSWORD_CHARACTERS: '包含至少 1 个特殊字符（~!@#$%^&*()-_=+\\|[{}];:\'",<.>/? 或空格）。',
+  PLEASE_CONFIRM_YOUR_ACCOUNT_INFO: '请确认您的账号信息',
+  PLEASE_INPUT_USERNAME: '请输入用户名',
 };

@@ -22,9 +22,10 @@
     "react-infinite-scroll-hook": "^4.1.1",
     "react-markdown": "^7.1.1",
     "react-table": "^7.7.0",
+    "rehype-slug": "^6.0.0",
     "remark-gfm": "^3.0.1",
     "semver": "^7.6.0",
-    "wujie-react": "^1.0.6",
+    "wujie-react": "^1.0.22",
     "xterm": "^5.1.0",
     "xterm-addon-fit": "^0.7.0",
     "yet-another-react-lightbox": "^3.12.0",
@@ -36,9 +37,9 @@
     "@types/nanoid": "^2.1.0"
   },
   "peerDependencies": {
-    "@kubed/charts": "^0.2.21",
-    "@kubed/code-editor": "^0.2.21",
-    "@kubed/log-viewer": "^0.2.21"
+    "@kubed/charts": "^0.2.31",
+    "@kubed/code-editor": "^0.2.31",
+    "@kubed/log-viewer": "^0.2.31"
   },
   "gitHead": "6380079918d574a833739b35ee51b0d2f72985ee"
 }

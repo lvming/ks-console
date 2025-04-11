@@ -43,7 +43,7 @@ function getDetail({
 }
 
 const EXTENSIONS_MARKETPLACE_PATH = `/extensions/marketplace`;
-const EXTENSIONS_MANAGER_PATH = `/extensions/manager`;
+const EXTENSIONS_MANAGEMENT_PATH = `/extensions/management`;
 const EXTENSIONS_PAGE_PATHS = {
   marketplace: {
     index: EXTENSIONS_MARKETPLACE_PATH,
@@ -54,27 +54,32 @@ const EXTENSIONS_PAGE_PATHS = {
         version: options?.version,
       }),
   },
-  manager: {
-    index: EXTENSIONS_MANAGER_PATH,
+  management: {
+    index: EXTENSIONS_MANAGEMENT_PATH,
     getDetail: (extensionName: string, options?: { version?: string }) =>
       getDetail({
-        basePath: EXTENSIONS_MANAGER_PATH,
+        basePath: EXTENSIONS_MANAGEMENT_PATH,
         extensionName,
         version: options?.version,
       }),
   },
 };
 
-enum ExtensionStatusState {
-  Preparing = 'Preparing',
-  Installing = 'Installing',
-  Upgrading = 'Upgrading',
-  Uninstalling = 'Uninstalling',
-  Installed = 'Installed',
-  Uninstalled = 'Uninstalled',
-  InstallFailed = 'InstallFailed',
-  UpgradeFailed = 'UpgradeFailed',
-  UninstallFailed = 'UninstallFailed',
-}
+const EXTENSION_STATUS_STATE_MAP = {
+  preparing: 'Preparing',
+  installing: 'Installing',
+  upgrading: 'Upgrading',
+  uninstalling: 'Uninstalling',
+  installed: 'Installed',
+  uninstalled: 'Uninstalled',
+  installFailed: 'InstallFailed',
+  upgradeFailed: 'UpgradeFailed',
+  uninstallFailed: 'UninstallFailed',
+} as const;
 
-export { EMPTY_ORIGINAL_EXTENSION, DEFAULT_LANGUAGE, EXTENSIONS_PAGE_PATHS, ExtensionStatusState };
+export {
+  EMPTY_ORIGINAL_EXTENSION,
+  DEFAULT_LANGUAGE,
+  EXTENSIONS_PAGE_PATHS,
+  EXTENSION_STATUS_STATE_MAP,
+};

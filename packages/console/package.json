@@ -24,16 +24,16 @@
     "react-markdown": "^7.1.1",
     "react-table": "^7.7.0",
     "react-textarea-autosize": "^8.3.2",
-    "wujie-react": "^1.0.6"
+    "wujie-react": "^1.0.22"
   },
   "devDependencies": {
     "@types/react-input-autosize": "^2.2.1"
   },
   "peerDependencies": {
     "@ks-console/shared": "^4.1.1",
-    "@kubed/charts": "^0.2.21",
-    "@kubed/code-editor": "^0.2.21",
-    "@kubed/diff-viewer": "^0.2.21"
+    "@kubed/charts": "^0.2.31",
+    "@kubed/code-editor": "^0.2.31",
+    "@kubed/diff-viewer": "^0.2.31"
   },
   "gitHead": "6380079918d574a833739b35ee51b0d2f72985ee"
 }
